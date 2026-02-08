@@ -1,0 +1,1 @@
+#include <bits/stdc++.h>using namespace std; int main() {    ios::sync_with_stdio(false);    cin.tie(NULL);     int t;    cin>>t;    while(t--){      int n,w;      cin>>n>>w;      int rem=((w-1)*(n/w))+n%w;            cout<<rem<<endl;     }     return 0;}
