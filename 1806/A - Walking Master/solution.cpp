@@ -1,1 +1,34 @@
-#include <bits/stdc++.h>using namespace std; int main() {    ios::sync_with_stdio(false);    cin.tie(NULL);     int t;    cin>>t;    while(t--){      long long x,y,a,b;      cin>>x>>y>>a>>b;      if(y>b){        cout<<-1<<endl;      }      else{        long long cnt=b-y;        x+=cnt;        if(x<a){          cout<<-1<<endl;        }else{          cnt+=x-a;          cout<<cnt<<endl;        }             }       }            return 0;}
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+ 
+    int t;
+    cin>>t;
+    while(t--){
+      long long x,y,a,b;
+      cin>>x>>y>>a>>b;
+      if(y>b){
+        cout<<-1<<endl;
+      }
+      else{
+        long long cnt=b-y;
+        x+=cnt;
+        if(x<a){
+          cout<<-1<<endl;
+        }else{
+          cnt+=x-a;
+          cout<<cnt<<endl;
+        }
+ 
+      
+      }
+ 
+      }
+ 
+      
+ 
+    return 0;
+}
